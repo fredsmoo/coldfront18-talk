@@ -166,11 +166,22 @@
 					</textarea>
 				</section>
 				<section data-markdown data-background-color="black" data-state="faded">
+						<textarea data-template>
+							<img class="clean" src="https://webrtc.org/assets/images/webrtc-logo-horiz-retro-750x140.png" />
+							#### So, you want to build a conference tool
+	
+							- Implement signaling
+							- Implement peer discovery / presence
+							- Build browser device handling 
+							- Understand connectivity and networking (ICE)
+						</textarea>
+					</section>
+				<section data-markdown data-background-color="black" data-state="faded">
 					<textarea data-template>
 						<img class="clean" src="https://webrtc.org/assets/images/webrtc-logo-horiz-retro-750x140.png" />
 						#### Important APIs
 
-						- getUserMedia - get access to the uer media device, which prodices a MediaStream
+						- getUserMedia - get access to user's media devices, produces a MediaStream
 						- RTCPeerConnection - represents connection between the local computer and a remote peer
 						- RTCDataChannel - sending arbitrary data over per connection
 					</textarea>
@@ -244,9 +255,29 @@
 				<section data-markdown data-background-color="#eb4d98" data-state="faded">
 						<textarea data-template>
 							<img class="clean large" src="images/sdp.png" />
-							#### Session Description Protocol (SDP)
+							#### Signaling
 
-							Negotiates capabilities like resolution, bitrate, codecs etc.
+							- Exchange candidates between peers
+							- Session Description Protocol (SDP): Negotiates capabilities like resolution, bitrate, codecs etc.
+						</textarea>
+				</section>
+				<section data-markdown data-background-color="#eb4d98" data-state="faded">
+						<textarea data-template>
+							#### SDP example
+
+							<img class="clean large" src="images/sdp_example.png" />
+						</textarea>
+				</section>
+				<section data-markdown data-background-color="#eb4d98" data-state="faded">
+						<textarea data-template>
+							#### Signaling flow
+
+							<img class="clean large" src="images/signaling.png" />
+						</textarea>
+				</section>
+				<section data-markdown data-background-color="#eb4d98" data-state="faded">
+						<textarea data-template>
+							[Code time](https://codepen.io/fredsmoo/pen/PxpbZd?editors=1010)
 						</textarea>
 				</section>
 				<section data-markdown data-background-color="#1000ff">
